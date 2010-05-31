@@ -31,7 +31,7 @@ class OutputGrowl:
 	
 	def on_feed_output(self,feed):
 		config = feed.config['growl']
-		app = config.get('event', 'New release')
+		app = config.get('app', 'Flexget')
 		notice = config.get('event', 'New release')
 		host = config.get('hostname', None)
 		passwd = config.get('password', None)
